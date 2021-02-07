@@ -2,13 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="E:/SELENIUM/HerokuAppTestingFramework/src/test/java/test/UrlShortenerTest.java">
+          name="test">
         <classes>
-            <class name="test.UrlShortenerTest">
-                <methods>
-                    <include name="testUrlShortener"/>
-                </methods>
-            </class>
+            <class name="test.UrlShortenerTest" />
+            <class name="test.UrlShortenerTest1" />
         </classes>
     </test>
 </suite>
