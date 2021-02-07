@@ -12,6 +12,7 @@ public class UrlShortenerTest extends BaseTest {
     public void testUrlShortener(){
         url = new UrlShortenerPage(getDriver());
         url.testUrlShortener("https://www.google.com/");
+        System.out.println("Works");
     }
 
 }
