@@ -3,7 +3,6 @@ package page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 import utils.BasePage;
 
 public class UrlShortenerPage extends BasePage {
@@ -22,9 +21,12 @@ public class UrlShortenerPage extends BasePage {
 
     public void testUrlShortener(String text){
         waitForElementToAppear(logo);
-        Assert.assertTrue(logo.isDisplayed());
         input.sendKeys(text);
         btn.submit();
+    }
+
+    public boolean isLogoVisible(){
+        return logo.isDisplayed();
     }
 
 }

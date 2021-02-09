@@ -5,8 +5,7 @@ import org.testng.annotations.Test;
 import page.UrlShortenerPage;
 import utils.BaseTest;
 
-public class UrlShortenerTest extends BaseTest {
-
+public class UrlShortenerTest3 extends BaseTest {
     UrlShortenerPage url;
 
     @Test
@@ -16,5 +15,4 @@ public class UrlShortenerTest extends BaseTest {
         url.testUrlShortener("https://www.google.com/");
         System.out.println("Works");
     }
-
 }
