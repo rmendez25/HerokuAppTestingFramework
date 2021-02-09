@@ -13,6 +13,5 @@ public class UrlShortenerTest3 extends BaseTest {
         url = new UrlShortenerPage(getDriver());
         Assert.assertTrue(url.isLogoVisible());
         url.testUrlShortener("https://www.google.com/");
-        System.out.println("Works");
     }
 }
